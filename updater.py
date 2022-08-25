@@ -1,3 +1,5 @@
+print('Chào mừng đến với BachNobUpdater!')
+
 from requests import get
 from shutil import unpack_archive
 from os import remove
@@ -30,7 +32,7 @@ try:
     unpack_archive('package.zip',path)
     print('Đã giải nén gói!')
     remove("package.zip")
-    print('Đã xóa gói!')
+    print('Đã hoàn tất!')
     print('Cập nhật thành công!')
     input('Nhấn Enter để thoát...')
 except:

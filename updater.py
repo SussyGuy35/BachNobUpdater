@@ -64,7 +64,7 @@ try:
         system(f'cmd /c "7z.exe x MyPlatformer-engine.npk -p{pw} -y"')
         remove('MyPlatformer-engine.npk')
         config.read('BachNobUpdaterConfig.ini')
-        config.set('Setting','current_version',f'1.{newest_ver}')
+        config.set('Setting','current_version',newest_ver_str)
         with open('BachNobUpdaterConfig.ini', 'w') as configfile:
             config.write(configfile)
         print(f'Cài đặt phiên bản {newest_ver_str} thành công!')
